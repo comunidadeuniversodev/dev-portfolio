@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Roboto&display=swap");
+
+:root {
+    --color-fundo: #101011;
+    --color-destaque: #1f5fa3;
+    --color-branco: #ffffff;
+    --color-cinza-neutro: #888889;
+    --color-branco-neutro: rgba(255, 255, 255, 0.70);
+}
+
+body {
+  background: var(--color-fundo);
+  color: var(--color-branco);
+  font-family: Roboto;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-branco);
+}
+
+.inicio {
+    background-image: url('imgs/thiago.png');
+    background-repeat: no-repeat;
+    background-position: right bottom;
+
+    min-height: 92vh;
+}
+
+.topo {
+  display: flex;
+  gap: 192px;
+  margin-left: 72px;
+  margin-top: 72px;
+  align-items: center;
+}
+
+.topo .menu {
+  display: flex;
+  gap: 103px;
+  font-size: 22px;
+}
+
+.topo .menu a {
+    color: var(--color-branco-neutro);
+}
+
+.topo .menu, a:hover {
+    color: var(--color-destaque);
+}
+
+.chamada {
+    display: flex;
+    flex-direction: column;
+    margin-top: 138px;
+    margin-left: 168px;
+    gap: 33px;
+
+    max-width: 723px;
+}
+
+.chamada h1 {
+    color: hsl(0, 0%, 100%);
+    font-family: Roboto;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+
+    max-width: 696px;
+
+    /* Fazendo a borda do lado esquerdo */
+    border-left-width: 4px;
+    border-left-style: solid;
+    border-left-color: var(--color-destaque);
+    margin-left: -23px;
+    padding-left: 23px;
+}
+
+.chamada h2 {
+    color: var(--color-branco-neutro);
+    max-width: 630px;
+
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.chamada a {
+    background-color: var(--color-destaque);
+    padding: 6px 40px;
+    border-radius: 99px;
+
+    color: var(--color-branco);
+    text-align: center;
+    font-size: 36px;
+    font-weight: 600;
+    width: 226px;
+}
